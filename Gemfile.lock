@@ -91,6 +91,8 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
+    faker (2.19.0)
+      i18n (>= 1.6, < 2)
     ffi (1.15.4)
     foundation-rails (6.6.2.0)
       railties (>= 3.1.0)
@@ -216,6 +218,7 @@ DEPENDENCIES
   byebug
   devise_token_auth (~> 1.1.4)
   factory_bot_rails
+  faker
   foundation-rails
   listen (~> 3.3)
   pg (~> 1.1)
