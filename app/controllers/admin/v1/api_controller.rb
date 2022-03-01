@@ -1,10 +1,10 @@
 module Admin::V1
-    class ApiController < ApplicationController+
+    class ApiController < ApplicationController
       class ForbiddenAccess < StandardError; end
 
         include Authenticable
 
-        before_action :restrict_access_form_admin!
+        before_action :restrict_access_for_admin!
 
         def render_error(message: nil, fields: nil, status: :unprocessable_entity)
             errors = {}
